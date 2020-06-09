@@ -1,3 +1,24 @@
-h1{color:rgb(0,232,15);}
-h2{color:blue;font-size: 16px;}
-body{background-color: chocolate;}
+body{
+    background:#af72e4;
+    font-family: sans-serif,Helvetica,Arial;
+}
+
+
+/*body{background-color: chocolate;}
+
+h1, h2{color:#040B47;}
+
+
+
+p{
+    color:green;
+}
+
+div{
+    color:rgb(67,233,190,0.8);
+
+}
+
+div h2{
+    color:rgb(67,233,190,0.8);
+}*/

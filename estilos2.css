@@ -1,4 +1,4 @@
-body{
+/*body{
     background:rgb(51, 139, 255);
 }
 h1,h2{
@@ -15,5 +15,34 @@ div h2 {
 
 p{
     color:green;
-}
+}*/
 
+/*de aqui para bajo muestro enlaces.css */
+a{
+    font-size:20px; 
+    text-decoration:none;
+    color:black;
+    background: blue;
+    
+}
+/*enlace sin visitar*/
+a:link{
+    
+    text-decoration:none;
+}
+/*enalce visitado*/
+a:visited{
+    color:red;
+    
+}
+/*Estado del enlace mientras se pasa el mouse por el enlace*/
+a:hover{
+    background:#f9a03f;
+    color:#fff;
+    font-size:40px;
+
+}
+/*estado del enlace mientras se esta haciendo click*/
+a:active{
+text-decoration: underline;
+}

@@ -1,0 +1,19 @@
+body{
+    background:rgb(51, 139, 255);
+}
+h1,h2{
+    color:#3339FF;
+}
+div {
+    color:yellowgreen;
+    background:#F1CF5D
+}
+
+div h2 {
+    color:rgba(119, 141, 58, 0.5);
+}
+
+p{
+    color:green;
+}
+

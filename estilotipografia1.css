@@ -1,0 +1,18 @@
+body{
+font-family: sans-serif, Helvetica, Arial;/*tipo de fuente*/
+}
+h1{
+    font-family:"Times New Roman", Arial;
+  font-style:italic;/*con italic letras cursivas inclinadas*/
+  font-size:20px;
+  
+  font-weight: bold;/*negrilla. si es "normal" sin negrilla*/
+  color:#4281ed;
+  text-align: center;/*alinear el contenido este puede ser centro izquierda o derecha*/
+  text-decoration:underline;/*sin subrrayar*/
+  text-transform: uppercase;/*texto mayusculas. pero tambien existe opcion minuscula. la opcion initial la primera letra mayuscula*/
+  letter-spacing:10px;/*espaciado entre letras*/
+}
+p{
+line-height: 30px;
+}

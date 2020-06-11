@@ -1,18 +1,59 @@
+/*Estilos de fondo*/
+/*palabras clave:
+hay 17 palabras clave que podemos usar :
+aqua, black, blue, fuchsia, green, lime, orange, purple, red, silver, teal, white, 
+RGB Decimal: rgb(215,38,61)
+RGB PORCENTUAL: rgb(84%,15%,24%)
+RGB HEXADECIMAL: #D7263D   */
+
+
 body{
-font-family: sans-serif, Helvetica, Arial;/*tipo de fuente*/
+background:rgb(255,0,0,0.5); /*con rgb podemos hacer una imagen mas transparente u opaca aplicando una 4ta propiedad en rgb dado este caso la 4ta propiedad es 0,5. si este 4to valor es 1 es intenso y si esta mas cerca a 0 es menos intenso y opaco*/
+/*background:url(imagenes/HOMER.jpg);*/ /*fondo una imagen*/
+background-repeat: no-repeat;       /*imagen de fondo no se repita*/
+background-size:50%;                /*definimos el porcetaje de la imagen de fondo*/
+background-attachment:fixed;       /*scroll: la imagen se queda fija en un lugar y si te mueves esta ya no se ve. Otra opcion: fixed : la imagen de fondo se va ha ver indistintamente donde te muevas*/
+background-position: 100px 200px; /*posicion de la imagen : a 100px a la derecha(ajuste horizontal echado) y 200px del inicio (ajuste vertical)*/
 }
-h1{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*tipografia*/
+
+
+
+
+/*body{
+font-family: sans-serif, Helvetica, Arial; }   /*tipo de fuente*/
+
+
+/*h1{
     font-family:"Times New Roman", Arial;
-  font-style:italic;/*con italic letras cursivas inclinadas*/
-  font-size:20px;
+  font-style:italic;                           /*con italic letras cursivas inclinadas*/
+  /*   font-size:20px;      */
   
-  font-weight: bold;/*negrilla. si es "normal" sin negrilla*/
-  color:#4281ed;
-  text-align: center;/*alinear el contenido este puede ser centro izquierda o derecha*/
-  text-decoration:underline;/*sin subrrayar*/
-  text-transform: uppercase;/*texto mayusculas. pero tambien existe opcion minuscula. la opcion initial la primera letra mayuscula*/
-  letter-spacing:10px;/*espaciado entre letras*/
-}
-p{
+  /*font-weight: bold;   */                        /*negrilla. si es "normal" sin negrilla*/
+  /*color:#4281ed;       */
+  /*text-align: center;  */                /*alinear el contenido este puede ser centro izquierda o derecha*/
+  /*text-decoration:underline;*/                                /*sin subrrayar*/
+  /*text-transform: uppercase;   */         /*texto mayusculas. pero tambien existe opcion minuscula. la opcion initial la primera letra mayuscula*/
+  /*letter-spacing:10px;      */                          /*espaciado entre letras*/
+/*}*/
+/*p{
 line-height: 30px;
-}
+}*/
+
+
+
+/*tipografia*/

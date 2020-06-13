@@ -1,0 +1,50 @@
+/*MediaQueries
+Podemos definir el tamñno maximo y tamaño minimo*/
+/*@media(min-width:1000px){
+ body{
+     font-size: 20px;
+     background: #965254;
+ }
+ div{
+     text-align:center;
+ }
+
+}
+*/
+@media(max-width:320px){
+body{
+    font-size: .5em;
+    background:cadetblue;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* modelo de cajas
+
+
+.div1{
+    background:#70F3F3;
+    height: 100px;
+    width:200px;
+    border:10px ridge#2BBDBD;
+    margin:200px 200px 0px 300px;
+    padding:25px 75px;
+}
+.div2{
+    background:#4565;
+    height:50px;
+    width:50px;
+   
+   
+}*/

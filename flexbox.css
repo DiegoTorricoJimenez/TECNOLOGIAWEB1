@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #f2f2f2;
+    font-family: Arial;
+
+}
+.contenedor{
+    width:90%;
+    max-width: 1000px;
+    height: 500px;
+    background: #212d40;
+
+    display:flex;                 /*diseño flexible o responsivo*/
+    flex-direction: column;           /*para filas :row, pero si quiero columnas column, si quiero fila en  reversa row-reverse, columnas reversas :column-reverse*/
+    flex-wrap: wrap;        /*opciones: wrap(acomodar el contenido en el espacio disponible), nowrap(contenido al principio)*/
+    /* flex-flow: column-reverse wrap;*/
+
+    justify-content:center;/*opciones:center(centro), space-between(elementos a una misma distancia),..*/
+
+    /* align-items:flex-start; */
+
+    align-content: center;
+}
+
+.caja{
+    width:100px;
+    height: 100px;
+    text-align: center;
+    background: #f79356;
+    margin:20px;
+    padding:20px;
+    font-size: 40px;
+    color:#fff;
+    flex-grow: 1; /*posicionara 1 a 1 los elementos*/
+    flex-shrink: 1;  /* */
+    
+       /*flex:1 1 auto;*/
+
+}
+
+.dos{
+/*flex-basis:200px;
+flex-grow:4;
+flex-shrink: 0;
+*/
+height: auto;
+align-self: stretch;
+}

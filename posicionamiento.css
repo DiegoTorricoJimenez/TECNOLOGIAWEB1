@@ -1,0 +1,96 @@
+/* EJEMPLO DE POSICIONAMIENTO DE CAJA*/
+
+
+
+/*
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background:#f2f2f2;
+}
+.caja{
+    width:200px;
+    height:200px;
+    background:#0E6BA8;
+    margin:20px;
+
+   float:left; 
+}
+
+*/
+
+/*.cajaPadre{
+    margin:20px;
+    background:#2e294e;
+    width:500px;
+    height:500px;
+    position:relative;
+   
+
+}
+
+.posicionada{
+    background:#6695e8;
+    position:fixed;
+    top:20px;        
+    bottom:;
+    left:20px;
+    right:;
+}*/
+
+
+/*tipos de posicionamiento
+-Normal(static):Posicionamiento por defecto con el que los navegadores acomodan los elementos (Posicionamiento en bloque uno debajo de otro. si es un div es contenido en bloque un cuadro debajo de otro)
+-Relativo (relative): Nos permite posicionar una caja y despues moverla desde su lugar original. relative nos permite posiconar la caja de acuerdo al top(movemos caja hacia abajo de acuerdo al borde superior), bottom(movemos caja hacia arriba de acuerdo al borde inferior), left(movemos caja hacia la derecha de acuerdo al borde izquierdo), right(movemos caja hacia la izquierda de acuerdo al borde derecho)(en cualquiera de los 4 parametros se pueden utilizar numeros negativos como positivos. Pero si utilizamos numeros negativos se comportan como su opuesto ejemplo top:-200px entonces se comportara como buttom).Por esta situacion generalmente se utilza 2 parametros por ejemplo top y right.Sino se especifica nada en los parametros(top. bottom,,,) posiciona uno debajo de otro
+-Absoluta(absolute): Nos permite posicionar una caja respecto a su contenedor y el resto de elementos igno      .absolute tambien utilza los 4 parametros top, bottom, rght, left(la caja se posiciona en un lugar sin importar que este en el mismo lugar de otra caja).absolute es muy util para posicionar un elemento dentro de otro por ejemplo para posicionar un logotipo.
+-fijo(fixed): Nos permite posicionar una caja en donde su posicion respecto a la pantalla del usuario sien       .(similar al absoluto se posicionara en el lugar que queramos sin importar que este en el mismo lugar que otro elemento con la diferencia que la caja se seguira viendo sin importar si nos desplazamos por la pantalla). Por ejemplo esto lo vemos en facebook con un menu que se sigue viendo sin importar que nos desplazemos por la pantalla.
+-flotante(fload):Nos permite desplazar las cajas todo lo posible hacia la derecha o izquierda.Es uno de los mas usados nos sirve para cambiar el posicionamiento de nuestro contenido. si quisera contenido uno alado del otro osea posicionamiento en linea el tipo de posicionamiento a utilizar es el flotante
+
+(por defecto un div se acomoda en bloque uno debajo de otro)
+
+
+*/
+
+
+
+
+/* EJEMPLO DE COMO PONER CAJAS PARA HEADER, MAIN,,, */
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background:#f2f2f2;
+}
+div{
+    width:200px;
+    height:200px;
+    background:#0E6852;
+    margin:20px;
+    /*float:left;*/
+}
+.caja_header{
+    width:100%;
+    background:#426852;
+}
+.caja_fotter{
+    width:100%;
+    background:#936852;
+}
+.padre{
+    width:100%;
+    
+}
+.caja_main{
+    width:60%;
+    background:#364852;
+    float:left;
+}
+.caja_aside{
+    width:25%;
+    background: #087152;
+    float:right;
+}

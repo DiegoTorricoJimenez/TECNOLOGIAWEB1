@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+  }  
+body {
+    width: 100%;
+    font-family: Garamond, Sans-serif;
+    font-size: 20px;
+    background: #2BBDBD;
+    background-size: 400px 400px;
+    color: #333233;
+  }
+  header .titulo{
+    font-size: 50px;
+    color: #2BBDBD;
+    margin-left: 150px;
+    margin-top: -30px;  
+    text-align: center;
+  }
+  .contenedor {
+    width: 98%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background: #333232;
+    padding: 20px 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+ }
+header {
+    height: 150px;
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    background: #333232;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}  
+header nav {
+    width: 100%;
+    font-size: 26px;
+    background: #2BBDBD;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-items: flex-end;
+}
+header nav ul {
+     list-style: none;
+     overflow: hidden; 
+}
+header nav ul li {
+    float: left; 
+}
+header nav ul li a {
+   text-decoration: none;
+   display: inline-block;
+   color: #2BBDBD;
+   padding: 10px 8px; }
+header nav ul li a {
+     color: #ffffff; 
+}
+header .logo img {
+     width: 180px;
+     margin-top: -145px;
+     margin-left: -75px;
+     border-radius: 20px;
+ }
+.articulo {
+    background: #dee1e1;
+    border-radius: 20px;
+    width: 1000px;
+    height: 700px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#contenido{
+  font-size:26px;
+}
+.parrafo{
+  text-align: justify;
+  line-height: 500px;
+}
+#Destacado {
+    border-bottom-color: #2BBDBD;
+    font-size:26px ;
+    border-bottom-width: 5px;
+    border-bottom-style:solid;
+}
+#ParrafoDestacado{
+   border-color: #2BBDBD;
+   border-width: 10px;
+   padding: 10px;
+   border-style: solid;
+}
+main {
+    width: 90%;
+    float: left;
+    background: #333232;
+    border-radius: 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;;
+}
+main .CORONAVIRUS-INDEX img{  
+   width: 1000px; 
+   vertical-align: top;
+   border-radius: 20px;
+}
+ main .articulo {
+    padding: 50px; 
+}
+ main .articulo article h2 {
+    margin-bottom: 20px;
+    color: #333232; 
+}
+main .articulo article p {
+    margin-bottom: 15px;
+    line-height: 27px; 
+}
+aside{
+  width: 30%;
+  height: 1210px;
+  background:#1e8bc2;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 26px;
+  font-family: Garamond;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-left: 40px;
+  padding: 50px;
+  position: absolute;
+  top:280px;
+  left: 1000px;
+}
+footer {
+  width: 98%;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px ;
+  overflow: hidden;
+  text-align: center;
+  background: #333233;
+  color: #dee1ed;
+  padding: 15px 0;
+  border-radius: 20px;
+  overflow: hidden;
+ }
+  @media screen and (max-width: 800px) {
+    .main {
+      width: 100%; }
+  
+    aside {
+      width: 100%; }
+  
+    footer {
+      width: 100%; } }
+

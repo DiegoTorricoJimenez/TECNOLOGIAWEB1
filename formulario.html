@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet">
+</head>
+<body>
+    <form action="" method="">
+        <!--for se vincula con id -->
+        <label for="nombre">Tu nombre:</label>
+
+        <input type="text" id="nombre" placeholder="Nombre:" maxlength="10" name="nombre" required readonly><!--  disabled:desabilita bloquea texto de entrada  readonly:solo lectura-->
+        <br><br>
+        <input type="email" placeholder="example@gmail.com" name="correo" required><!--etiqueta de correo  -->
+        <br><br>
+        <label for="com">Introduzca su comentario</label>
+        <textarea name="comentarios" id="com" placeholder="Comentarios" cols="30" rows="10"></textarea><!-- cols: 30 caracteres por linea. rows=10 filas-->
+        <br>
+        <br>
+        <label for="ciudad">Ciudad</label>
+        <select name="ciudad" id="ciudad">
+            <option value="Cochabamba">Cochabamba</option>
+            <option value="La Paz">La Paz</option>
+            <option value="Santa Cruz">Santa Cruz</option>
+        </select>
+        
+        <input type="radio" name="Genero" value="Hombre" id="Hombre">
+        <label for="Hombre">Hombre</label>
+        <input type="radio" name="Genero" value="Mujer" id="Mujer">
+        <label for="Mujer">Mujer</label>
+
+        
+
+       
+      <br><br>
+
+      <input type="checkbox" name="terminos" id="terminos">
+      <label for="terminos">Acepto los terminos</label>
+      
+      <input type="submit" value="enviar"><br> <!--etiqueta de boton  -->
+
+    </form>
+</body>
+</html>

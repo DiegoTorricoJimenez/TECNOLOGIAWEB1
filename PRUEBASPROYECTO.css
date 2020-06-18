@@ -11,26 +11,34 @@ body {
     background-size: 400px 400px;
     color: #333233;
   }
+ 
+  
   header .titulo{
-    font-size: 50px;
-    color: #2BBDBD;
-    margin-left: 150px;
-    margin-top: -30px;  
-    text-align: center;
+    font-size: 50px;  /*tamaño de las letras del titulo*/
+     color: #464040; /*tipo de color de la letra*/
+    
+     margin-left: 100px; /*margen de separacion de la caja div (cuyo nombre de clase es .titulo )con el borde izquierdo de la pantalla*/
+     margin-top:30px;  /*margen de separacion del borde superior con la caja div titulo. dado este caso actua como un bottom osea actua como la separacion de la caja div con el borde inferior*/
+    text-align: center;/*alineacion en el centro del texto*/
+
+    background-color: #DEE1E1;  /*Color de fondo del titulo*/
+    
   }
+  
   .contenedor {
-    width: 98%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
     background: #333232;
-    padding: 20px 50px;
-    border-radius: 20px;
-    display: flex;
+    padding:20px 20px;
+    border-radius: 20px;/*esquinas de la caja van a tener una curva de 20px*/
+   /*display: flex;
     flex-direction:row;
-    flex-wrap:wrap;
+    flex-wrap:wrap;*/
  }
+ /*
 header {
     height: 150px;
     width: 100%;
@@ -174,3 +182,4 @@ footer {
     footer {
       width: 100%; } }
 
+*/

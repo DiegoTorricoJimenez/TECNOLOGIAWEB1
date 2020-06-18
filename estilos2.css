@@ -1,6 +1,6 @@
 body{
-    background:url('imagenes/TIGER.png');
-    background-repeat:repeat;
+    background:url('imagenes/TIGER.png');/*imagen de fondo*/
+    background-repeat:repeat;/*para que imagen de fondo se repita*/
     
 }
 /*body{

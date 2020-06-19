@@ -164,6 +164,10 @@ footer {
   border-radius: 20px;
   overflow: hidden;
  }
+
+
+
+
   @media screen and (max-width: 800px) {
     .main {
       width: 100%; }

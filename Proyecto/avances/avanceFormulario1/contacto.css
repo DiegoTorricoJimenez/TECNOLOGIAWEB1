@@ -1,0 +1,94 @@
+* {
+	padding: 0;
+    margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #DEE1E1;
+    font-family:Garamond, Sans-serif;
+    font-size: 15px;
+    
+}
+
+.formulario1 {
+    
+	width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+    border-radius: 40px;
+    border:20px solid #2BBDBD;
+    
+}
+
+.formulario1 input, label{
+    display: block;
+  
+} 
+
+
+.formulario1 input[type="text"],
+.formulario1 input[type="email"],
+.formulario1 input[type="tel"],
+.formulario1 input[type="date"],
+.formulario1 input[type="file"],
+.formulario1 textarea,.formulario1 select{
+	width: 300px;
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+     border:2px solid #2BBDBD;
+	font-size: 15px;
+    font-family: Garamond, Sans-serif;
+    margin: auto;
+    
+}
+
+.formulario1 textarea {
+	min-height:60px;
+	max-height:120px;
+	min-width:50%;
+	max-width:100%;
+}
+
+.formulario1 input[type="text"]:focus,
+.formulario1 input[type="email"]:focus,
+.formulario1 input[type="tel"]:focus,
+.formulario1 input[type="date"]:focus,
+.formulario1 textarea:focus,
+.formulario1 select:focus
+{
+    border:2px solid #70f3f3;
+    border-radius: 3px;
+}
+
+.formulario1 input[type="submit"] {
+    cursor:pointer;
+    margin:auto;
+    width: 150px;
+	padding: 10px;
+	border:2px solid #2BBDBD;
+	color:black;
+	background:none;
+	border-radius: 3px;
+	font-size: 15px;
+}
+
+.formulario1 input[type="submit"]:hover {
+    color: #fff;
+    background:#70f3f3;
+}
+.formulario1 label{
+    text-align: center;
+}
+.formulario1 textarea {
+    margin: auto;
+}
+.centrar{
+    text-align: center;
+}
+#agradecimiento{
+    text-align: center;
+    background: #2BBDBD;
+
+}

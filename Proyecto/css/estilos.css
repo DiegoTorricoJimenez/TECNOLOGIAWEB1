@@ -158,18 +158,18 @@ header .logo img {
    border-style: solid;
 }
 main {
-    width:1000px;
-    float: left;
-    background: #333232;
-    border-radius: 20px;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20px;;
+  width:1000px;
+  float: left;
+  background: #333232;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
     
 }
 main .CORONAVIRUS-INDEX img{  
-   width: 1000px; 
+   flex-basis:70%; 
    vertical-align: top;
    border-radius: 20px;
 }
@@ -185,8 +185,9 @@ main .articulo article p {
     line-height: 27px; 
 }
 
-
+/*estoy modificando*/
 aside{
+
   width: 30%;
   height: 1210px;
   background:#1e8bc2;
@@ -202,7 +203,6 @@ aside{
   top:280px;
   left: 1000px;
   float:right;
-  
 }
 /*para quitar los puntos de los links de los articulos destacados*/
 aside ul li{

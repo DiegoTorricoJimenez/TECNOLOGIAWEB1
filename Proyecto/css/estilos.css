@@ -17,6 +17,7 @@ body {
     margin-left: 150px;
     margin-top: -30px;  
     text-align: center;
+    
   }
   .contenedor {
     width: 98%;
@@ -31,33 +32,81 @@ body {
     flex-direction:row;
     flex-wrap:wrap;
  }
-header {
-    height: 150px;
-    width: 100%;
-    padding: 50px 20px;
-    display: flex;
+
+ /*codigo antiguo*/
+ header {
+    height:280px;
+    width:100%;
+    padding:13px;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-between;
-    align-items:center;
+    align-content:center;
     background: #333232;
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 20px;
     margin-left: 20px;
-}  
+}
+/*codigo antiguo*/
+
 header nav {
+    
     width: 100%;
     font-size: 26px;
-    background: #2BBDBD;
     height: 60px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-    align-items: flex-end;
+    align-items:flex-start;
+    margin:0 auto;
 }
+
+/*nuevo: este fragmento de codigo es nuevo lo añadi para hacer el menu desplegable*/
+nav{
+  margin: 0 auto;
+  max-width: 760px;/* aquiiiii*/
+  background-color:#2BBDBD;
+  
+}
+
+/*nuevo: este fragmento de codigo es nuevo use la clase navegacion dicha clase hace referencia a nav*/
+.navegacion {
+  list-style: none;
+  text-align: center;
+  padding:0; 
+  
+}
+
+/*esta parte de codigo coloque como parte del menu desplegable*/
+/*nuevo sirve para que el primer elemento hijo se muestre en bloque*/
+.navegacion li:first-child{
+  display:block;
+}
+
+/*esta parte de codigo coloque como parte del menu desplegable*/
+/*nuevo sirve para que solo se muestre la etiqueta menu*/
+.navegacion li {
+  display: none;
+  
+}
+/*a esta parte de codigo coloque como parte del menu desplegable*/
+.navegacion a{
+  display: block;
+  color:#2BBDBD;
+  padding: 10px;/*nuevo*/
+  text-align: center;
+  text-decoration: none;
+  background:#464040 ;
+}
+/*esta parte de codigo coloque como parte del menu desplegable*/
+.navegacion a:hover{
+  color:#2BBDBD;
+  background-color: #464040;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* este codigo es antiguo por siacaso lo deje como comentario*/
+/*
 header nav ul {
      list-style: none;
      overflow: hidden; 
@@ -72,17 +121,18 @@ header nav ul li a {
    padding: 10px 8px; }
 header nav ul li a {
      color: #ffffff; 
-}
+}*/
+
 header .logo img {
-     width: 180px;
+     flex-basis: 180px;
      margin-top: -145px;
      margin-left: -75px;
      border-radius: 20px;
  }
+
 .articulo {
     background: #dee1e1;
     border-radius: 20px;
-    width: 1000px;
     height: 700px;
     float: left;
     margin-top: 10px;
@@ -108,7 +158,7 @@ header .logo img {
    border-style: solid;
 }
 main {
-    width: 90%;
+    width:1000px;
     float: left;
     background: #333232;
     border-radius: 20px;
@@ -116,6 +166,7 @@ main {
     margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 20px;;
+    
 }
 main .CORONAVIRUS-INDEX img{  
    width: 1000px; 
@@ -133,6 +184,8 @@ main .articulo article p {
     margin-bottom: 15px;
     line-height: 27px; 
 }
+
+
 aside{
   width: 30%;
   height: 1210px;
@@ -148,7 +201,19 @@ aside{
   position: absolute;
   top:280px;
   left: 1000px;
+  float:right;
+  
 }
+/*para quitar los puntos de los links de los articulos destacados*/
+aside ul li{
+  list-style: none;
+}
+aside ul li a{
+  text-decoration: none;
+  color:#464040;
+}
+
+
 footer {
   width: 98%;
   font-size: 16px;
@@ -162,24 +227,39 @@ footer {
   color: #dee1ed;
   padding: 15px 0;
   border-radius: 20px;
-  overflow: hidden;
+ 
  }
 
- nav ul a:hover {
-	color: #DEE1E1;
-	background-color: #464040;
-	font-weight: 800;
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
 }
 
+ 
+@media only screen and (min-width:1024px) {
+ 
+
+	.navegacion {
+		display: flex;
+	}
+	.navegacion li:first-child{
+		display: none;
+	}
+	.navegacion li{
+    display: inline-block;
+		flex: 1 1 100%;
+	}
+	.navegacion li a {
+		color: #DEE1E1;
+  }
+ 
+ 
+  
+}
+ 
 
 
-  @media screen and (max-width: 800px) {
-    .main {
-      width: 100%; }
-  
-    aside {
-      width: 100%; }
-  
-    footer {
-      width: 100%; } }
+
 

@@ -87,8 +87,13 @@ body {
 .centrar{
     text-align: center;
 }
+#tituloagradecimiento{
+    background: #2BBDBD;
+    flex-basis: 100%;
+}
 #agradecimiento{
     text-align: center;
     background: #2BBDBD;
+    flex-basis: 100%;
 
 }

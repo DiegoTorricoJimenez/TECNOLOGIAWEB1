@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos-condiciones y mas</title>
+</head>
+<body>
+    <header>
+        
+        <script src="fecha2.js"></script>
+
+    </header>
+    <script>/*
+            
+      
+       
+         //A los arreglo tambien se les llama Arrays, vectores, matrices
+         //var mes1="Enero";
+        //var mes2="Febrero";
+        //var mes3="Marzo";
+
+        var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio",
+                "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+                document.write(meses[3]+" ");
+                 
+                 console.log(meses);
+
+        //         for(mes in meses){
+        //             document.write(meses[mes]);
+       //              document.write("<br>")
+        //         }
+
+
+
+//matriz se accede a una posicion del arreglo mediante ciclo for
+       var matrix=[[1,2,3,4],[4,8,12]];
+        
+
+//matriz se accede a una posicion del arreglo mediante ciclo for
+var listnum=[1,2,3,4];
+    document.write(listnum[1]);
+
+
+ //otra forma de arreglo
+ var amigos=[];
+ amigos[0]="Carlos";
+ amigos[1]="Alejandro";
+
+ document.write(amigos);              
+
+
+//ciclo for
+               for (var i=1;i<=10;i++){
+                   document.write(i);
+                   document.write("<br>");
+               };
+
+ //funciones
+ function suma(numero1,numero2){
+     var s=numero1+numero2;
+     document.write(s);
+     document.write('<br>');
+ }              
+suma(10,7);
+var a=10;
+var b=15;
+suma(a,b);
+suma(2,3);
+
+
+//sentencia return
+//function suma(num1,num2){
+//  var resultado=num1+num2;
+//return resultado;
+//}
+
+
+//condicion if
+var nota=15;
+if(nota>=51){
+    document.write("APROBADO");
+}
+else{
+    document.write("REPROBADO");
+}
+
+//switch case
+var pais="Bolivia";
+switch(pais){
+    case "Mexico":
+    document.write("Eres Mexicano");
+    break;
+    case "Argentina":
+    document.write("Eres Argentino");
+    break;
+    case "Peru":
+    document.write("Eres Peruano");
+    break;
+    case "Bolivia":
+    document.write("Eres Boliviano");
+    break;
+    default:
+    document.write("No sabemos de donde eres")
+    break;
+}
+
+//ciclo do while
+var n=1
+do{
+console.log(n);
+n=n+1;
+}while(n<=10);
+
+
+var NU=45
+while(NU<=50){
+    document.write(NU+"<br>")
+    NU=NU+1;
+}
+*/
+//funciones la podemos llamar las veces que queramos
+document.write("Funciones:"+"<br>");
+function suma(NUME1,NUME2){
+   // document.write(NUME1+NUME2);
+   var s=NUME1+NUME2;
+   document.write('La suma es: '+s);
+    document.write('<br>');
+}
+
+suma(10,7);
+var r=20;
+var g=5;
+suma(r,g);
+</script>
+
+
+<footer>
+</footer>
+   
+        <script src="fecha.js"></script>
+    
+</body>
+</html>
+    

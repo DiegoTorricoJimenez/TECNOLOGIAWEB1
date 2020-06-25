@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #464040;
+}
+
+h1{
+    color:#70F3F3;
+    text-align: center;
+    margin:auto;
+    
+}
+.imagenes {
+	width: 100%;
+	display:flex;
+	flex-wrap:wrap;/*para que los elementos osea las imagenes no esten estrechos en una sola linea y se situen uno debajo de otra dependiendo el espacio que ocupa cada elemento*/
+    justify-content:center; /*con esto todos los elementos contenidos dentro de la etiqueta imaganes se situaran al centro de la pagina*/
+	
+}
+
+.imagenes img {
+	width: 300px;/*el ancho de cada imagen sera de 300px dependiendo si el ancho lo aumento o disminuyo podran caber mas o menos imagenes en una linea horizontal*/
+	margin: 10px; /*margen el espacio alrededor de los elementos. no tiene color de fondo*/
+	padding: 5px; /*padding relleno distancia entre el contenido y el borde*/
+	opacity:0.4;  /*mediante esto le damos opacidad a las imagenes cuanto mas se acerca a 0 es mas opaco la imagen*/
+	border:5px solid #70F3F3; /*con esto le damos un borde en 3D hundido*/
+}
+
+.imagenes img:hover {
+	border: 5px groove #70F3F3;
+	opacity:1;/*el color de la opacidad esta en 1 para que no tenga opacidad ya que cuando haga clic su color de la imagen de lo que esta opaca se pondra en su color original*/
+
+}

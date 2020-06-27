@@ -7,7 +7,10 @@ body {
     background: #ffffff;
     overflow-x:hidden;
 }
+
+
 .menu-principal{
+    
     position: fixed;
     width: 100%;
     height: 90px;
@@ -168,6 +171,7 @@ display: none;
     }
     main{
         background: #ffffff;
+       
     }
     .inf {
         width: 95%;
@@ -185,8 +189,10 @@ display: none;
         font-size: 35px;
         text-align: center;
         justify-content: center;   
-        margin-bottom: -20px;
+       /*margin-bottom:-20px;*//*elimine esta linea de codigo y cambie por la de abajo*/
+        margin-top:50px;   /*para que se pueda ver la primera parte ya que el menu tapa el titulo*/
         padding: 50px 0px;
+
     }
    
     .inf .cuerpo-inf{

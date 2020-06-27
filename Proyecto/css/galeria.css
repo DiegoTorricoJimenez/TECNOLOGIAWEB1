@@ -108,14 +108,20 @@ body{
 }
 
 #titulo-galeria{
-    text-align: left; /*titulo estara alineado a la izquierda*/
-    margin:20px; 
-    color:white;
+
+    text-align: center; /*titulo estara alineado a la izquierda*/
+    padding: 15px;
+    margin-bottom:40px;
+    position: relative;
+    top:70px;
+    left:0;
+    color:black;
 }
 .contenedor-imagenes{
+ padding: 40px;/*es nesesario por que si no el menu desplegable tapa parte de la imagen*/
  display:flex;/*mediante esta propiedad podremos posicionar distribuir las imagenes dentro de esta caja*/
  width:85%;
- margin:auto;  /*para centrar*/
+ margin:0 auto;  /*para centrar*/
  justify-content:space-around;/*alinea horizontalmente los elementos pero con la misma separacion entre ellos*/
  flex-wrap:wrap;/*posiciona los elementos sobre otras lineas adicionales*/
 
@@ -124,13 +130,15 @@ body{
 .contenedor-imagenes .imagen{
  width:40%;/*para que la cajas que contienen las imagenes  tengan un ancho del 40%*/
  position:relative;/*esta propiedad sera util cuando lo combinemos con absolute*/
- height:250px;
+ height:250px;/*cambie 250px*/
  margin-bottom:50px;/*margen superior*/
 }
-.imagen img{
+.imagen .multimedia{
   width: 100%; /*con esto cada etiqueta img osea cada imagen abarcara el 100% de su caja padre (.imagen)*/
   height: 100%;  /*osea tendran un ancho del 40% y alto de 250px ya establecido en su caja padre*/
-  
+  object-fit: cover;
+ 
+ 
 }
 /*esta caja contiene un titulo descriptivo de la imagen*/
 .Descripcion{/*anteriormente puse un position relative que ahora me servira con el absolute*/
@@ -159,6 +167,30 @@ body{
  cursor:pointer;
 
 } 
+
+
+
+.contenedor-titulo-video{
+    position:absolute;
+    bottom:-22px; /*para que le titulo descriptivo se posicione 22 pixeles mas abajo de la imagen*/     
+    left:0; /*con esto va estar el titulo a la misma rectura izquierda de su imagen*/
+    background:white;
+    width:100%;/*hasta aqui se vera que el fondo de color abarca el 100% de ancho de la etiqueta h2*/
+    height:30px; 
+    overflow: hidden;
+
+}   
+.titulo-video{
+    
+    font-size:15px;
+    position:absolute; /*posicion absoluta de acuerdo a su caja padre imagen*/
+    top:40%;    /*Estos valores fueron colocados  de acuerdo a pruebas para centrar el titulo video*/
+    right:10%;
+    left:10%;  
+    text-align:center; /*para que horizontalmente el texto este centrado en el centro*/
+  
+}  
+
 
 @media screen and (max-width:1000px){
     .contenedor-imagenes{

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
+
+
+</head>
+<body>
+    <header id="head">
+        <nav class="menu-principal">
+            <div class="logo">
+               <img id = "logotipo" src="IMAGENES/LOGO-K.PNG" alt="logo de la pagina" width="240">
+               <span class="boton-menu"> 
+                   <i class="logo-menu">&#9776; MENU</i> 
+               </span>
+           </div>
+                   <div class="opciones-menu">
+                       <ul class="opciones">
+                           <li><a href="index.html" class="active">INICIO</a></li>
+                           <li><a href="informacion.html">INFORMACION</a></li>
+                           <li><a href="prevencion.html">PREVENCION</a></li>
+                           <li><a href="videos.html">VIDEOS</a></li>
+                           <li><a href="imagenes.html">GALERIA</a></li>
+                           <li><a href="contacto.html">CONTACTO</a></li>
+                       </ul>
+                   </div>
+         </nav>
+        </header>
+    <section class="men">
+       <br><br><br><br><br><br>
+        <h3 class="til">ESCRIBENOS SI TIENE ALGUNA DUDA!</h3>
+    
+    <form class="formulario1" action="agradecimiento.html" method="POST">
+       <label for="nombre">Nombres:</label>
+       
+       <input type="text" id="nombre" name="NOMBRE" pattern="[A-Za-z]{5,30}" placeholder="nombre" title="ejemplo:Diego" required> 
+       
+       <label for="apellido">Aplellidos:</label>
+       <input type="text" id="apellido" name="APELLIDO" pattern="[A-Za-z]{5,30}" placeholder="apellido" title="ejemplo:Torrico" required>
+       <label for="correo">Correo Electronico:</label>
+       <input type="email" id="correo" name="CORREO" placeholder="example@gmail.com">
+       <label for="telefono">Telefono:</label>
+       <input type="tel" id="telefono" name="TELEFONO" pattern="[0-9]{8}" placeholder="telefono" required>
+ 
+       <label for="fecha">Fecha:</label>
+       <input type="date" id="fecha" name="FECHA">
+
+
+
+
+      
+       <label for="usuario">Usuario:</label>
+       <div class="centrar">
+       <select id="usuario" name="USUARIO">
+           <option value="diego">Diego</option>
+           <option value="rocio">Rocio</option>
+           <option value="administrador">Administrador</option>
+           <option value="otros">Otros</option>
+       </select>
+    </div>
+      
+
+
+      
+
+       <label for="tema">Informacion:</label>
+       <div class="centrar">
+       <select id="tema" name="TEMA">
+           <option value="seleccionar" selected disabled>Seleccionar tema</option>
+           <option value="Covid 19 en Bolivia">Covid 19(Bolivia)</option>
+           <option value="Sintomas del coronavirus">Sintomas de covid19</option>
+           <option value="Recomendaciones">Recomendaciones(covid19)</option>
+       </select>
+    </div>
+
+
+
+       <label for="aporte">Informacion para aportar:</label>     
+       <input type="file" id="aporte" name="APORTE">
+
+
+
+
+       <label for="comentario">Comentarios:</label>
+       <div class="centrar">
+       <textarea id="comentario" name="COMENTARIO" placeholder="Comentarios" cols="20" rows="10"></textarea>
+       </div>
+        
+       
+
+       <input type="submit" value="ENVIAR">
+           <h3 id="gracias">GRACIAS POR LLENAR EL FORMULARIO :)</h3>
+    </form>
+</section>
+<br><br><br><br><br><br><br>
+<footer><!--pie de la pagina-->
+       
+    <div class="redes">
+        <a href="https://www.facebook.com/pg/minsaludbolivia/posts/">FACEBOOK </a>
+        <a href="https://www.instagram.com/covid_19.world/">INSTAGRAM </a>
+        <a href="https://twitter.com/coronavid19?lang=en">TWITTER </a>
+    </div> 
+    <h2 class="fin">©2020 k-chito - Location: Bolivia UPDS</h2>
+    <h2 class="fin">Todos los Derechos Reservados</h2><br>
+    <script class="fin" src="JS/fecha.js "> </script>
+</footer>
+<script src="JS/javascript1.js"></script>
+</body>
+</html>

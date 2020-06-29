@@ -1,0 +1,124 @@
+/*Imagenes*/
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; /*, si se define un elemento con un ancho de 100 pixeles. Esos 100 pixeles incluíran cualquier borde o relleno que se añadan*/
+}
+body{
+    background:black;
+    
+}  
+#titulo-galeria{
+
+    text-align: center; /*titulo estara alineado a la izquierda*/
+    padding: 15px;
+    margin-bottom:40px;
+    position: relative;
+    top:70px;
+    left:0;
+    color:black;
+}
+.contenedor-imagenes{
+ padding: 40px;/*es nesesario por que si no el menu desplegable tapa parte de la imagen*/
+ display:flex;/*mediante esta propiedad podremos posicionar distribuir las imagenes dentro de esta caja*/
+ width:85%;
+ margin:0 auto;  /*para centrar*/
+ justify-content:space-around;/*alinea horizontalmente los elementos pero con la misma separacion entre ellos*/
+ flex-wrap:wrap;/*posiciona los elementos sobre otras lineas adicionales*/
+
+}
+
+.contenedor-imagenes .imagen{
+ width:40%;/*para que la cajas que contienen las imagenes  tengan un ancho del 40%*/
+ position:relative;/*esta propiedad sera util cuando lo combinemos con absolute*/
+ height:250px;/*cambie 250px*/
+ margin-bottom:50px;/*margen superior*/
+}
+.imagen .multimedia{
+  width: 100%; /*con esto cada etiqueta img osea cada imagen abarcara el 100% de su caja padre (.imagen)*/
+  height: 100%;  /*osea tendran un ancho del 40% y alto de 250px ya establecido en su caja padre*/
+  object-fit: cover;
+ 
+ 
+}
+/*esta caja contiene un titulo descriptivo de la imagen*/
+.Descripcion{/*anteriormente puse un position relative que ahora me servira con el absolute*/
+    position:absolute;/*con el absolute se posicionara esta caja de acuerdo a la posicion de su caja padre (.imagen) si te das cuenta toma como referencia la imagen*/
+    bottom:0px; /*para que le titulo descriptivo se posicione 22 pixeles mas abajo de la imagen*/     
+    left:0; /*con esto va estar el titulo a la misma rectura izquierda de su imagen*/
+    background:#2bbdbd;
+    width:100%;/*hasta aqui se vera que el fondo de color abarca el 100% de ancho de la etiqueta h2*/
+    height:0%; /*en esta parte no se vera el titulo descriptivo ya que tiene alto de 0 y por que ademas tiene overflow hidden */
+    overflow: hidden; /*mediante esto el contenido es recortado solo muestra de acuerdo a las dimensiones especificadas*/
+   transition: 1s ease;/*para una transicion lenta rapida y por ultimo lenta*/
+
+}   
+.titulo-descriptivo{
+    color:white; 
+    font-size:20px;
+    position:absolute; /*posicion absoluta de acuerdo a su caja padre imagen*/
+    top:40%;    /*Estos valores fueron colocados  de acuerdo a pruebas para centrar el titulo descriptivo*/
+    right:10%;
+    left:10%;  
+    text-align:center; /*para que horizontalmente el texto este centrado en el centro*/
+   /* transform: translate(-50%,-50%);/*(Y,X)*//*permite centrar */
+}  
+.imagen:hover .Descripcion{/*cuando pase el mouse  por la imagen la clase descripcion hara lo siguiente:*/
+ height: 100%;           /*cambiara su altura de 0 a 100% mostrando una descripcion y el muse de volvera una manito*/
+ cursor:pointer;
+
+} 
+
+
+
+.contenedor-titulo-video{
+    position:absolute;
+    bottom:-22px; /*para que le titulo descriptivo se posicione 22 pixeles mas abajo de la imagen*/     
+    left:0; /*con esto va estar el titulo a la misma rectura izquierda de su imagen*/
+    background:white;
+    width:100%;/*hasta aqui se vera que el fondo de color abarca el 100% de ancho de la etiqueta h2*/
+    height:30px; 
+    overflow: hidden;
+
+}   
+.titulo-video{
+    
+    font-size:15px;
+    position:absolute; /*posicion absoluta de acuerdo a su caja padre imagen*/
+    top:40%;    /*Estos valores fueron colocados  de acuerdo a pruebas para centrar el titulo video*/
+    right:10%;
+    left:10%;  
+    text-align:center; /*para que horizontalmente el texto este centrado en el centro*/
+  
+}  
+
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width:95%;
+    }
+
+}  
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width:90%;               /*cuando la pantalla tenga un maximo de 700px el contenedor imagen tendra un ancho de 90%*/
+    }
+    .contenedor-imagenes .imagen{  /*y el ancho de cada imagen aumentara en porcentaje para que mediante la propiedad flex-wrap:wrap */
+        width:48%;                 /* automaticamente posicionara las imagenes una debajo de otra*/
+    }
+    
+}     
+@media screen and (max-width:450px){
+    #titulo-galeria{
+        font-size: 22px;
+    }
+    
+    .contenedor-imagenes{
+        width:98%;
+    }
+    .contenedor-imagenes .imagen{
+        width:80%;
+    }
+    
+}   
+

@@ -1,0 +1,123 @@
+*{
+	padding: 0;
+    margin: 0;
+	box-sizing: border-box;
+}
+body {
+	
+    font-family:Garamond, Sans-serif;
+    font-size: 15px;   
+}
+.men{
+    width: 100%;
+    background: #ffffff;
+  
+ 
+}
+.til{
+    color: #1a1818;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: -100px;
+}
+.formulario1 {
+    
+    width: 70%;
+    height: 80%;
+    margin: 0px auto;
+    position: relative;
+    top:120px;
+    background: #ffffff;
+	padding: 20px 0px;
+    border-radius: 40px;
+    border:20px solid #2BBDBD;
+}
+
+.formulario1 input, label{
+    display: block;
+  
+} 
+
+
+.formulario1 input[type="text"],
+.formulario1 input[type="email"],
+.formulario1 input[type="tel"],
+.formulario1 input[type="date"],
+.formulario1 input[type="file"],
+.formulario1 textarea,.formulario1 select{
+	width: 70%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+     border:2px solid #2BBDBD;
+	font-size: 15px;
+    font-family: Garamond, Sans-serif;
+    margin: auto;
+    
+}
+
+.formulario1 textarea {
+	min-height:60px;
+	max-height:120px;
+	min-width:50%;
+	max-width:90%;
+}
+
+.formulario1 input[type="text"]:focus,
+.formulario1 input[type="email"]:focus,
+.formulario1 input[type="tel"]:focus,
+.formulario1 input[type="date"]:focus,
+.formulario1 textarea:focus,
+.formulario1 select:focus
+{
+    border:2px solid #70f3f3;
+    border-radius: 3px;
+}
+
+.formulario1 input[type="submit"] {
+    cursor:pointer;
+    margin:auto;
+    width:70%;/**/
+	padding: 10px;
+	border:2px solid #2BBDBD;
+	color:black;
+	background:none;
+	border-radius: 3px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.formulario1 input[type="submit"]:hover {
+    color: #fff;
+    background:#2bbdbd;
+}
+.formulario1 label{
+    text-align: center;
+}
+.formulario1 textarea {
+    margin: auto;
+}
+.centrar{
+    text-align: center;
+}
+#tituloagradecimiento{
+    background: #2BBDBD;
+    flex-basis: 100%;
+}
+#agradecimiento{
+    text-align: center;
+    background: #2BBDBD;
+    flex-basis: 100%;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: -20px;
+}
+#gracias{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #2bbdbd;
+    margin-top: 15px;
+
+}
+
